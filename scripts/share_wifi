@@ -1,0 +1,2 @@
+#!/bin/bash
+nmcli dev wifi hotspot ifname wlp2s0 ssid Martin_router_king password $1 

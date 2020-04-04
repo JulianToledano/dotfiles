@@ -97,8 +97,14 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias chrome="google-chrome --proxy-server="http://proxy.indra.es:8080" &; disown"
+
 # Custom variables
 export PATH=~/.local/bin:$PATH
+
+# dotfiles --bare repository alias
 alias dfc='/usr/bin/git --git-dir=/home/julian/.dotfiles/ --work-tree=/home/julian'
+
+alias sud='~/scripts/display_setup/setup_display'
