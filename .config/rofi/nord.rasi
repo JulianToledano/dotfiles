@@ -1,0 +1,128 @@
+/* Thanks to: Mauladen. */
+/* You can find their dotfiles here: https://github.com/Mauladen/dotfiles */
+
+* {
+  /* Make text color white and background fully transparent */
+  text-color:        #ECEFF4;
+  background-color:  rgba(0,0,0,0);
+
+  /* This variables change other elements color
+   * Change here and it will change over all the
+   * theme (for an unified experience) */
+  fc-color: #3B4252;
+  bg-color: #2E3440;
+  fc-color-trans: #3B4252C5;
+  bg-color-trans: #2E3440F0;
+
+  font: "Hack Nerd Font 11";
+}
+
+/* ================================================= */
+/* Main container                                    */
+/* ================================================= */
+#window {
+  fullscreen:    true;
+  location:      west;
+  anchor:        west;
+  border:        0px 0px 0px 0px;
+  transparency:  "real";
+
+  background-color:  @bg-color-trans;
+  orientation:  horizontal;
+  children:     [mainbox, dummy];
+}
+
+/* First container */
+#mainbox {
+  expand:            false;
+  background-color:  @bg-color-trans;
+  spacing:           0.8em;
+}
+
+/* Dummy container */
+#dummy {
+  expand: true;
+}
+/* ================================================= */
+
+/* ================================================= */
+/* Sidebar and its elements                          */
+/* ================================================= */
+#sidebar {
+  border:  0px 0px 0px 0px;
+}
+
+#button {
+  padding:    10px;
+}
+
+#button selected {
+  font:              "Hack Nerd Font Bold 10";
+  background-color:  @fc-color-trans;
+}
+/* ================================================= */
+
+/* ================================================= */
+/*  Input bar                                        */
+/* ================================================= */
+#inputbar {
+  background-color:  @bg-color;
+  padding:           5px;
+  spacing:           5px;
+}
+
+#prompt {
+  font: "Hack Nerd Font Bold Italic 10";
+}
+
+#entry {
+  font: "Hack Nerd Font Italic 10";
+  width: 15em;
+}
+/* ================================================= */
+
+
+/* ================================================= */
+/* List view                                         */
+/* ================================================= */
+#listview {
+  /*spacing: 0.5em;*/
+}
+
+#element {
+  font:     "Hack Nerd Font 11";
+  padding:  12px 1.5em 12px 14px;
+}
+
+#element selected normal {
+  background-color: @fc-color-trans;
+}
+
+#element normal active {
+  background-color: @fc-color-trans;
+}
+
+#element normal urgent {
+  background-color: Orange;
+}
+
+#element alternate normal {
+}
+
+#element alternate active {
+  text-color: @focus-col;
+}
+
+#element alternate urgent {
+  background-color: OrangeRed;
+}
+
+#element selected active {
+  background-color:  @fc-color-trans;
+}
+
+#element selected urgent {
+  background-color:  DarkOrange;
+}
+/* ================================================= */
+

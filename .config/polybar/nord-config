@@ -45,7 +45,7 @@ bottom-left = info-hackspeed
 bottom-center = daily-poem
 bottom-right = temperature memory cpu
 
-systray-top = none
+systray-top = right
 systray-bottom = left
 
 # global style

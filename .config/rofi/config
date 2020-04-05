@@ -1,0 +1,5 @@
+rofi.terminal: termite
+
+rofi.sidebar-mode: true
+
+rofi.theme: nord.rasi
